@@ -1,0 +1,106 @@
+---
+import "../styles/global.css";
+
+
+const front=[
+    {id:1,nombre:"HTML",img:"https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png"},
+    {id:2,nombre:"CSS",img:"https://www.adaweb.es/wp-content/uploads/2022/05/logotipo_css-min.png"},
+    {id:3,nombre:"JS",img:"https://quintagroup.com/cms/js/js-image/javascript-logo.png"},
+    {id:4,nombre:"Astro",img:"https://miro.medium.com/v2/resize:fit:1400/1*nLbfO_PdTSpeCdZQuUr8RQ.png"},
+]
+
+const back=[
+    {id:1,nombre:"PHP",img:"https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png"},
+    {id:2,nombre:"JAVA",img:"https://i.blogs.es/8d2420/650_1000_java/450_1000.webp"},
+]
+
+const baseDatos=[
+    {id:1,nombre:"MYSQL",img:"https://sc.filehippo.net/images/t_app-icon-l/p/917c77e8-96d1-11e6-8453-00163ed833e7/4171024085/mysql-com-logo"},
+    {id:2,nombre:"POSTGRESQL",img:"https://w7.pngwing.com/pngs/657/27/png-transparent-postgresql-original-wordmark-logo-icon-thumbnail.png"},
+]
+
+
+---
+
+<div class="w-5/6 block m-auto">
+
+    <div class="p-2">
+        <h2 class="text-5xl text-center font-bold">My skills</h2>
+    </div>
+
+    <div class="flex justify-center flex-wrap gap-5 p-2">
+
+        <!-- <div> -->
+
+            <div class="bg-blue-950 text-white p-4 rounded-full cursor-pointer w-full lg:w-1/5 text-center" id="btnFront">
+                <h2>Front End</h2>
+            </div>
+            <div class="bg-blue-950 text-white p-4 rounded-full cursor-pointer w-full lg:w-1/5 text-center" id="btnBack">
+                <h2>Back End</h2>
+            </div>
+            <div class="bg-blue-950 text-white p-4 rounded-full cursor-pointer w-full lg:w-1/5 text-center" id="btnBased">
+                <h2>Base de Datos</h2>
+            </div>
+            <div class="bg-blue-950 text-white p-4 rounded-full cursor-pointer w-full lg:w-1/5 text-center" id="btnT">
+                <h2>Todos</h2>
+            </div>
+
+        <!-- </div> -->
+
+    </div>
+
+    <div class="flex flex-col p-2 mb-2 gap-4" id="front">
+
+        <div class="flex justify-around flex-wrap p-4 gap-4" id="fron">
+
+            {front.map((f) => (
+                <div class="bg-white rounded-2xl p-4 shadow-xl" key={f.id}>
+                    <img 
+                        src={f.img}
+                        alt="" 
+                        class="w-32"
+                    />
+                    <p class="text-center text-2xl p-1 font-bold">{f.nombre}</p>
+                </div>
+            ))}
+
+        </div>
+
+        <div class="flex justify-around flex-wrap p-4 gap-4" id="back">
+
+            {back.map((b) => (
+                <div class="bg-white rounded-2xl p-4 shadow-xl" key={b.id}>
+                    <img 
+                        src={b.img}
+                        alt="" 
+                        class="w-32"
+                    />
+                    <p class="text-center text-2xl p-1 font-bold">{b.nombre}</p>
+                </div>
+            ))}
+
+        </div>
+
+
+        <div class="flex justify-around flex-wrap p-4 gap-4" id="bd">
+
+            {baseDatos.map((bd) => (
+                <div class="bg-white rounded-2xl p-4 shadow-xl" key={bd.id}>
+                    <img 
+                        src={bd.img}
+                        alt="" 
+                        class="w-32"
+                    />
+                    <p class="text-center text-2xl p-1 font-bold">{bd.nombre}</p>
+                </div>
+            ))}
+
+        </div>
+
+    </div>
+
+
+
+</div>
+
+<script src="/src/assets/js/script.js"></script>

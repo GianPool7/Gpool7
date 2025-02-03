@@ -1,48 +1,31 @@
-# Astro Starter Kit: Basics
+# ¡Bienvenido a Mi Portafolio Web Online en Construcción! 🚧
 
-```sh
-npm create astro@latest -- --template basics
-```
+¡Hola! 👋
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Gracias por llegar hasta aquí. Estás mirando **la obra maestra en proceso** de mi portafolio que está siendo construida con :D y **Astro**. 🚀
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🚧 **¿Qué está pasando aquí?**
+Esta página está **en construcción**, como una *gran torre de Lego* que va tomando forma poco a poco. Cada día, el equipo (o sea, yo 😅) está agregando más contenido, más magia y más funcionalidades. 
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+Así que si ves algo raro o sin mucha descripción, no te preocupes, ¡es solo parte de la magia de la construcción!
 
-## 🚀 Project Structure
+## 🛠️ **¿Cuándo estará lista?**
+La respuesta es... no tengo ni idea. Pero, ¡te prometo que estará increíble! Y aunque la fecha exacta de lanzamiento es un misterio, ¡las actualizaciones llegarán más rápido que una conexión de fibra óptica! 
 
-Inside of your Astro project, you'll see the following folders and files:
+## 📝 **Lo que vendrá:**
+- Un diseño tan bonito que querrás tomarle una foto 📸 (broma)
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## ⚙️ **Hecho con Astro**
+Este sitio está siendo construido usando **Astro**, una herramienta **moderna y rápida** que me ayuda a mantener todo organizado mientras sigo agregando cosas geniales.
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🔄 **¡Sígueme para futuras actualizaciones!**
+No te preocupes, cuando todo esté listo, te lo haré saber. Y mientras tanto, ¡puedes ver cómo voy agregando cositas divertidas de vez en cuando!
 
-## 🧞 Commands
+Así que, ¡gracias por tu paciencia y por ser parte de este proceso épico! Y recuerda, si todo va bien, ¡será una página web que ni tu abuelita podrá dejar de usar! 😄
 
-All commands are run from the root of the project, from a terminal:
+¡Nos vemos pronto! 👀
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+---
 
-## 👀 Want to learn more?
+> "La web es como una obra de arte, siempre en constante evolución... especialmente cuando tienes que hacerla tú mismo." - *Un sabio desconocido* 🤷‍♂️
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
