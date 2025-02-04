@@ -44,5 +44,4 @@ const cajaDialog=document.getElementById("mostrar")
 
 clickMostar.addEventListener("click",()=> {
     cajaDialog.showModal();
-    cajaDialog.style.display="flex"
 })

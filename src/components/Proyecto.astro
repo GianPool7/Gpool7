@@ -1,12 +1,12 @@
 ---
 
 const proyectos=[
-    {id:1,titulo:"Panel de control (Dashboard)",img:"https://gianpool7.github.io/img/Proyectos/p_dos.PNG",tech:["Php","Mysql","Html","Css","plantilla"]},
-    {id:2,titulo:"Sitio Web de postulación",img:"https://gianpool7.github.io/img/Proyectos/p_uno.PNG",tech:["Php","Mysql","Html","Css","plantilla"]},
-    {id:3,titulo:"Pagina Web",img:"https://gianpool7.github.io/img/Proyectos/p_tres.PNG",tech:["Js","Html","Css"]},
-    {id:4,titulo:"Formulario Web - Reclamos",img:"https://gianpool7.github.io/img/Proyectos/p_tres.PNG",tech:["Js","Html","Css","Python"]},
-    {id:4,titulo:"Formulario Web - Reclamos",img:"https://gianpool7.github.io/img/Proyectos/p_tres.PNG",tech:["Js","Html","Css","Python"]},
-    {id:5,titulo:"Mi Portafolio Web",img:"https://gianpool7.github.io/img/Proyectos/p_tres.PNG",tech:["Astro","Html","Css","Js"]},
+    {id:1,titulo:"Panel de control (Dashboard)",img:"https://gianpool7.github.io/img/Proyectos/p_dos.PNG",tech:["Php","Mysql","Html","Css","plantilla"],link:"",repositorio:""},
+    {id:2,titulo:"Sitio Web de postulación",img:"https://gianpool7.github.io/img/Proyectos/p_uno.PNG",tech:["Php","Mysql","Html","Css","plantilla"],link:"",repositorio:"https://github.com/GianPool7/Sitio_Web_Postulaci-n-"},
+    {id:3,titulo:"Pagina Web",img:"https://gianpool7.github.io/img/Proyectos/p_tres.PNG",tech:["Js","Html","Css"],link:"",repositorio:""},
+    {id:4,titulo:"Formulario Web - Reclamos",img:"https://gianpool7.github.io/img/Proyectos/p_tres.PNG",tech:["Js","Html","Css","Python"],link:"",repositorio:""},
+    {id:4,titulo:"Formulario Web - Reclamos",img:"https://gianpool7.github.io/img/Proyectos/p_tres.PNG",tech:["Js","Html","Css","Python"],link:"",repositorio:""},
+    {id:5,titulo:"Mi Portafolio Web",img:"https://gianpool7.github.io/img/Proyectos/p_tres.PNG",tech:["Astro","Html","Css","Js"],link:"https://gianpool7.github.io/Gpool7/",repositorio:"https://github.com/GianPool7/Gpool7"},
 ]
 
 const skills=[
@@ -30,7 +30,7 @@ const skills=[
                     <img class="rounded-t-2xl" src={proyecto.img} alt="Imagen del proyecto" />
                 </div>
 
-                <div class="bg-red-500 p-4 rounded-b-2xl">
+                <div class="bg-gray-400 p-4 rounded-b-2xl">
                     <h1 class="font-bold text-2xl">{proyecto.titulo}</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, at.</p>
 
@@ -40,18 +40,27 @@ const skills=[
                         ))}
                     </div>
 
-                    <div class="bg-green-500 p-2 flex justify-around">
-                        <div class="bg-yellow-300 rounded-full">
-                            <a href="" class="p-4">Link</a>
-                        </div>
-                        <div class="bg-purple-400 rounded-full">
-                            <a href="" class="p-4">Repositorio</a>
-                        </div>
-                        <div class="bg-pink-400 ">
-                            <button id="mas">Detalle</button>
-                        </div>
-                        <dialog class="bg-purple-400 p-4 flex justify-center items-center" id="mostrar">
-                            <h2>skere</h2>
+                    <div class="p-1 flex justify-around flex-wrap w-full gap-1">
+
+                        <a href="http://" target="_blank" rel="noopener noreferrer" class="bg-yellow-300 rounded-full flex justify-center items-center gap-2 text-white w-1/4 hover:shadow-2xl">
+                            
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xl"></i>
+
+                            <span class="">Link</span>
+                        </a>
+
+                        <a href="http://" target="_blank" rel="noopener noreferrer" class="bg-blue-950 rounded-full flex justify-between p-4 gap-2 text-white w-1/3">
+                            <i class="fa-brands fa-github text-xl"></i>
+                            <span>Repositorio</span>
+                        </a>
+
+                        <button class="bg-red-600 rounded-full w-1/4 flex justify-between p-4 gap-2 text-white outline-none hover:shadow-2xl hover:bg-red-800" id="mas">
+                            <i class="fa-solid fa-circle-info text-xl"></i>
+                            <span>Detalle</span>
+                        </button>
+
+                        <dialog class="bg-purple-400 p-4 justify-center items-center fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-[90%] max-h-[80%] none" id="mostrar">
+                            <h2>{proyecto.titulo}</h2>
                             <h1>gola</h1>
                         </dialog>
                     </div>
