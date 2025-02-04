@@ -7,6 +7,6 @@ export default defineConfig({
     vite: {
       plugins: [tailwindcss()],
     },
-    site:"https://github.com/GianPool7",
-    base:"Gpool7"
+    //site:"https://github.com/GianPool7",
+    //base:"Gpool7"
   });

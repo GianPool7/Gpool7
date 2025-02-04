@@ -9,12 +9,6 @@ const proyectos=[
     {id:5,titulo:"Mi Portafolio Web",img:"https://gianpool7.github.io/img/Proyectos/p_tres.PNG",tech:["Astro","Html","Css","Js"],link:"https://gianpool7.github.io/Gpool7/",repositorio:"https://github.com/GianPool7/Gpool7"},
 ]
 
-const skills=[
-    {id:1,tech:["js","a"]},
-    {id:2,},
-]
-
-
 ---
 
 <div class="block m-auto w-5/6">
@@ -24,7 +18,7 @@ const skills=[
     <div class="p-2 flex flex-wrap justify-evenly">
 
 
-        {proyectos.map((proyecto) => (
+        {proyectos.map((proyecto,index) => (
             <div class="w-full lg:w-1/3 p-2" key={proyecto.id}> {/* 'key' para ayudar con la optimización del renderizado */}
                 <div>
                     <img class="rounded-t-2xl" src={proyecto.img} alt="Imagen del proyecto" />
@@ -54,7 +48,7 @@ const skills=[
                             <span>Repositorio</span>
                         </a>
 
-                        <button class="bg-red-600 rounded-full w-1/4 flex justify-between p-4 gap-2 text-white outline-none hover:shadow-2xl hover:bg-red-800" id="mas">
+                        <button class="bg-red-600 cursor-pointer rounded-full w-1/4 flex justify-between p-4 gap-2 text-white outline-none hover:shadow-2xl hover:bg-red-800" id={`mas-${index}`}>
                             <i class="fa-solid fa-circle-info text-xl"></i>
                             <span>Detalle</span>
                         </button>
