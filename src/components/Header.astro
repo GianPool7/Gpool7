@@ -2,17 +2,75 @@
 import "../styles/global.css";
 ---
 
-<div class="flex justify-around shadow-lg p-4 w-full gap-2 bg-white sticky top-0">
-    <div class="w-1/2">
-        <h1 class="text-4xl font-bold">GPool<span class="">DEV</span></h1>
+<div class="sticky top-0">
+
+    <div class="flex justify-between shadow-lg p-4 w-full gap-2 bg-white" id="fondo">
+
+        <div class="w-1/2">
+            <h1 class="text-4xl font-bold">GPool<span class="">DEV</span></h1>
+        </div>
+    
+        <div class="w-1/2">
+    
+            <nav class="justify-around align-middle p-2 md:flex hidden" id="menu">
+                <a href="#mi" class="text-xl">Sobre mi</a>
+                <a href="#skill" class="text-xl">Skill</a>
+                <a href="#proyectos" class="text-xl">Proyectos</a>
+            </nav>
+    
+            <div class="float-right md:hidden block">
+                <button class="cursor-pointer" id="responsivo">
+                    <i class="fa-solid fa-bars text-4xl "></i>
+                </button>
+            </div>
+    
+            <div class="float-right hidden" id="CerrarResponsivo">
+                <button class="cursor-pointer">
+                    <i class="fa-solid fa-x text-4xl"></i>
+                </button>
+            </div>
+    
+        </div>
+
     </div>
 
-    <div class="w-1/2">
-        <nav class="flex justify-around align-middle p-2">
-            <a href="" class="text-xl">Sobre mi</a>
+
+    <div class="p-2 hidden sticky bg-white shadow-lg top-0" id="contenedorMenuResponsivo">
+
+        <nav class="flex flex-col items-center gap-4" id="menu">
+            <a href="" class="text-xl hover:border-solid hover:border-b-2">Sobre mi</a>
             <a href="" class="text-xl">Skill</a>
             <a href="" class="text-xl">Proyectos</a>
         </nav>
+
     </div>
+
 </div>
 
+
+
+
+<script src="/src/assets/js/modos.js"></script>
+
+<script>
+    // contenedor de menu responsivo
+    const contenedor=document.getElementById("contenedorMenuResponsivo")
+    //
+    const btnResponsivo=document.getElementById("responsivo");
+    const btnCerrarResponsivo=document.getElementById("CerrarResponsivo")
+
+    // FUNCIONES
+    btnResponsivo.addEventListener("click",()=>{
+        contenedor.style.display="block";
+        btnResponsivo.style.display="none";
+        btnCerrarResponsivo.style.display="block"
+    })
+
+    btnCerrarResponsivo.addEventListener("click",()=>{
+        contenedor.style.display="none";
+        btnResponsivo.style.display="block";
+        btnCerrarResponsivo.style.display="none"
+    })
+
+
+</script>

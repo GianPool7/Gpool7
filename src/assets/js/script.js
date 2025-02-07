@@ -55,3 +55,4 @@ const cajaDialog=document.getElementById("mostrar")
 clickMostar.addEventListener("click",()=> {
     cajaDialog.showModal();
 })
+
