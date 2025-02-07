@@ -49,10 +49,10 @@ const skills=[
 /* para hacer un modal */
 
 
-const clickMostar=document.getElementById(`mas-${index}`);
-const cajaDialog=document.getElementById("mostrar")
+// const clickMostar=document.getElementById(`mas-${index}`);
+// const cajaDialog=document.getElementById("mostrar")
 
-clickMostar.addEventListener("click",()=> {
-    cajaDialog.showModal();
-})
+// clickMostar.addEventListener("click",()=> {
+//     cajaDialog.showModal();
+// })
 
